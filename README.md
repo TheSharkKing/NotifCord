@@ -1,1 +1,7 @@
-I have no idea what im doing im booty cheeks at github and discord bots
+Basic Streaming Bot for Discord and to add notifications for all content platforms
+(eg: Twitch, Youtube, Twitter(X), Kick)
+
+# To install Dependents:
+```
+pip install -r dependents.txt
+```
