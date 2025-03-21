@@ -1,4 +1,4 @@
-import requests
+import main
 import time
 
 KICK_API_URL = "https://api.kick.com/v1/channels/"
@@ -6,7 +6,7 @@ CHANNEL_NAME = "your_channel_name"
 CHECK_INTERVAL = 60  # in seconds
 
 def is_live(channel_name):
-    response = requests.get(f"{KICK_API_URL}{channel_name}")
+    response = main.get(f"{KICK_API_URL}{channel_name}")
     if response.status_code == 200:
         data = response.json()
         return data['is_live']

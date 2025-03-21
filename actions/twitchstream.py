@@ -1,4 +1,4 @@
-import requests
+import main
 import time
 
 # Replace these with your actual Twitch API credentials
@@ -13,7 +13,7 @@ def get_stream_status():
         'Client-ID': CLIENT_ID,
         'Authorization': f'Bearer {ACCESS_TOKEN}'
     }
-    response = requests.get(url, headers=headers)
+    response = main.get(url, headers=headers)
     data = response.json()
     if data['data']:
         return True

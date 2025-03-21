@@ -1,9 +1,9 @@
 import os
 
-import googleapiclient.discovery
+import main
 
 def check_live_status(api_key, channel_id):
-    youtube = googleapiclient.discovery.build("youtube", "v3", developerKey=api_key)
+    youtube = main.build("youtube", "v3", developerKey=api_key)
 
     request = youtube.search().list(
         part="snippet",

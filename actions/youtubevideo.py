@@ -1,4 +1,4 @@
-import requests
+import main
 import json
 import time
 
@@ -11,7 +11,7 @@ CHECK_INTERVAL = 300
 
 def get_latest_video(channel_id):
     url = f'https://www.googleapis.com/youtube/v3/search?key={API_KEY}&channelId={channel_id}&part=snippet,id&order=date&maxResults=1'
-    response = requests.get(url)
+    response = main.get(url)
     data = response.json()
     if 'items' in data and len(data['items']) > 0:
         return data['items'][0]
