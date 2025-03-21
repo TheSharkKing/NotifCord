@@ -3,7 +3,7 @@ Basic Streaming Bot for Discord and to add notifications for all content platfor
 (eg: Twitch, Youtube, Twitter(X), Kick)
 
 # Config
-N/a
+N/A
 
 # To install Dependents:
 ```
