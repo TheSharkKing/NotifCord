@@ -9,3 +9,5 @@ N/A
 ```
 pip install -r dependents.txt
 ```
+TOS.md
+PrivacyPolicy.md
